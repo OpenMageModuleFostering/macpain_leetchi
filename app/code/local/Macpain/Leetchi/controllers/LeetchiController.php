@@ -124,7 +124,10 @@ class Macpain_Leetchi_LeetchiController extends Mage_Core_Controller_Front_Actio
     protected function _emptyShoppingCart()
     {
         try {
-            $this->_getCart()->truncate()->save();
+        	foreach( Mage::getSingleton('checkout/session')->getQuote()->getItemsCollection() as $item ){
+        		Mage::getSingleton('checkout/cart')->removeItem( $item->getId() )->save();
+        	}
+            //$this->_getCart()->truncate()->save();
             $this->_getSession()->setCartWasUpdated(true);
         } catch (Mage_Core_Exception $exception) {
             $this->_getSession()->addError($exception->getMessage());

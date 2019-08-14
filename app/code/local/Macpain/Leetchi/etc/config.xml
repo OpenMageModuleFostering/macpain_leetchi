@@ -22,6 +22,15 @@
                 </leetchi>
             </updates>
         </layout>
+        <translate>
+            <modules>
+                <Macpain_Leetchi>
+                    <files>
+                        <default>Macpain_Leetchi.csv</default>
+                    </files>
+                </Macpain_Leetchi>
+            </modules>
+        </translate>
     </frontend>
     <global>
         <models>
