@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<leetchi_leetchi_redirect>
+		<reference name="root">
+			<action method="setTemplate">
+				<template>page/1column.phtml</template>
+			</action>
+		</reference>
+		<reference name="root">
+			<block as="content" type="macpain_leetchi/redirect" name="redirectForm"
+				template="macpain/leetchi/redirect.phtml" />
+		</reference>
+	</leetchi_leetchi_redirect>
+	<leetchi_leetchi_cancel>
+		<reference name="root">
+			<action method="setTemplate">
+				<template>page/1column.phtml</template>
+			</action>
+		</reference>
+		<reference name="root">
+			<block as="content" type="macpain_leetchi/cancel" name="cancelPage"
+				template="macpain/leetchi/cancel.phtml" />
+		</reference>
+	</leetchi_leetchi_cancel>
+</layout>

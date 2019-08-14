@@ -1,0 +1,15 @@
+<p id="helper-txt"><?php echo $this->__('In a moment you will be redirected to leetchi.com payment page') ?></p>
+<script type="text/javascript" src="<?php echo Mage::getStoreConfig('payment/leetchi/redirect_js') ?>"></script>
+<link href="<?php echo Mage::getStoreConfig('payment/leetchi/redirect_css') ?>" rel="stylesheet" type="text/css" />
+<?php echo $this->getLeetchiForm()->toHtml(); ?>
+<script type="text/javascript">
+//<![CDATA[
+leetchiJQuery(document).ready(function (leetchiJQuery) {
+	leetchiJQuery("#leetchi_payment_form").submit();
+	leetchiJQuery(".ui-icon-closethick").click(function(){
+		document.location.href = "<?php echo $this->getUrl(Mage::getStoreConfig('payment/leetchi/cancelurl')); ?>";
+	});
+	leetchiJQuery("#helper-txt").hide();
+});
+//]]>
+</script>

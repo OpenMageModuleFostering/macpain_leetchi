@@ -1,0 +1,9 @@
+<div class="page-title">
+    <h1><?php echo $this->__('Order details.') ?></h1>
+</div>
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<h2 class="sub-title"><?php echo $this->__('Your order has been cancelled.') ?></h2>
+<p><?php echo $this->__('You will receive an order cancellation email with details of your order.') ?></p>
+<div class="buttons-set">
+    <button type="button" class="button" title="<?php echo $this->__('Continue Shopping') ?>" onclick="window.location='<?php echo $this->getUrl() ?>'"><span><span><?php echo $this->__('Continue Shopping') ?></span></span></button>
+</div>
