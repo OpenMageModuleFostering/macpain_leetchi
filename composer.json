@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Macpain_Leetchi",
+    "name": "openmage-module-fostering\/macpain_leetchi",
     "type": "magento-module",
-    "license": "OSL-v3.0",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "This extension provides new payment method with external paygate to leetchi.com",
     "authors": [
